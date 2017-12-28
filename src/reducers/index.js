@@ -1,7 +1,9 @@
-// Retorne todos os reducers combinados aqui
-import { combineReducers } from 'redux';
-import LeisReducer from './LeisReducer';
+import { combineReducers } from 'redux'
+import { routerReducer } from 'react-router-redux'
+
+import listar from './reducer'
 
 export default combineReducers({
-	leis: LeisReducer
-});
+  routing: routerReducer,
+  listar
+})
