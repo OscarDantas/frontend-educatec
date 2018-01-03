@@ -1,0 +1,362 @@
+{
+    "title": "Edital",
+    "model": "Editals",
+    "icon": "user",
+    "actions": [
+        {
+            "key": "add",
+            "description": "Adicionar",
+            "icon": "plus",            
+            "tooltip": "Clique para adicionar um novo edital",
+            "path": "/actions/add.jsx",
+            "isMoreAction": false,
+            "isDisableWithoutSelection": false,
+            "formPars": [ ],
+            "filters": [ ]
+        },
+        {
+            "key": "search",
+            "description": "Buscar",
+            "icon": "search",
+            "tooltip": "Clique para buscar um edital",
+            "path": "/actions/search.jsx",
+            "isMoreAction": false,
+            "isDisableWithoutSelection": false,
+            "formPars": [ ],
+            "filters": [ ]
+        },
+        {
+            "key": "edit",
+            "description": "Editar",
+            "icon": "edit",
+            "tooltip": "Clique para editar um edital",
+            "path": "/actions/edit.jsx",
+            "isMoreAction": false,
+            "isDisableWithoutSelection": true,
+            "formPars": [ ],
+            "filters": [ ]
+        },
+        {
+            "key": "remove",
+            "description": "Remover",
+            "icon": "delete",
+            "tooltip": "Clique para buscar um edital",
+            "path": "/actions/search.jsx",
+            "isMoreAction": true,
+            "isDisableWithoutSelection": true,
+            "formPars": [ ],
+            "filters": [ ]
+        },
+        {
+            "key": "Module",
+            "description": "Gerenciar Ciclos",
+            "icon": "",
+            "tooltip": "",
+            "path": "/actions/module.jsx",
+            "isMoreAction": true,
+            "isDisableWithoutSelection": true,
+            "formPars": [
+                {
+                    "key": "model",
+                    "value": "Cycles"
+                }
+            ],
+            "filters": [
+                {
+                    "type": "attribute",
+                    "key": "idEdital",
+                    "value": "@idEdital"
+                }
+            ]
+        },
+        {
+            "key": "DinamycForm",
+            "description": "Gerenciar Formulário",
+            "tooltip": "",
+            "path": "/actions/dynamicForm.jsx",
+            "isMoreAction": true,
+            "isDisableWithoutSelection": true,
+            "formPars": [ ],
+            "filters": [
+                {
+                    "key": "idEdital",
+                    "value": "@idEdital"
+                }
+            ]
+        }
+    ],
+    "attributes": [
+        {
+            "model": "",
+            "key": "ds_titulo",
+            "description": "Título",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": true,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [ ]
+            }
+        },
+        {
+            "model": "",
+            "key": "dt_edital",
+            "description": "Data de Publicação",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": true,
+            "order": 1,
+            "formItem": {
+                "key": "datePicker",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [ ]
+            }
+        },
+        {
+            "model": "",
+            "key": "ds_edital",
+            "description": "Descrição do Edital",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": true,
+            "order": 1,
+            "formItem": {
+                "key": "areaText",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [ ]
+            }
+        },
+        {
+            "model": "",
+            "key": "st_edital",
+            "description": "Disponibilidade",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": true,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [ ]
+            }
+        },
+        {
+            "model": "",
+            "key": "ds_link",
+            "description": "Link (URL)",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": true,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [ ]
+            }
+        },
+        {
+            "model": "",
+            "key": "st_registro_ativo",
+            "description": "Situação",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": true,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [ ]
+            }
+        },
+        {
+            "model": "Modalidades",
+            "key": "modalidade",
+            "description": "Modalidade",
+            "tooltip": "Informe as modalidades do edital",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": false,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/selectCollection.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [
+                    {
+                        "type": "attribute",
+                        "key": "active",
+                        "value": true
+                    }
+                ]
+            }
+        },
+        {
+            "model": "Etapas",
+            "key": "etapa",
+            "description": "Etapa",
+            "tooltip": "Informe as etapas do edital",
+            "isVisibleDataTable": false,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": true,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/selectCollection.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [
+                    {
+                        "type": "attribute",
+                        "key": "active",
+                        "value": true
+                    }
+                ]
+            }
+        },
+        {
+            "model": "Leis",
+            "key": "lei",
+            "description": "Lei",
+            "tooltip": "Informe as leis do edital",
+            "isVisibleDataTable": false,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": false,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/selectCollection.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [
+                    {
+                        "type": "attribute",
+                        "key": "active",
+                        "value": true
+                    }
+                ]
+            }
+        },
+        {
+            "model": "Categorias",
+            "key": "categoria",
+            "description": "Categoria",
+            "tooltip": "Informe as categorias do edital",
+            "isVisibleDataTable": false,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": false,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/selectCollection.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [
+                    {
+                        "type": "attribute",
+                        "key": "active",
+                        "value": true
+                    }
+                ]
+            }
+        },
+        {
+            "model": "GrauAbrangencias",
+            "key": "grauAbrangencia",
+            "description": "Graus de Abrangência",
+            "tooltip": "Informe os graus de abrangência do edital",
+            "isVisibleDataTable": false,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": false,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/selectCollection.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [
+                    {
+                        "type": "attribute",
+                        "key": "active",
+                        "value": true
+                    }
+                ]
+            }
+        },
+        {
+            "model": "AreaConhecimentos",
+            "key": "areaConhecimento",
+            "description": "Áreas de Conhecimento",
+            "tooltip": "Informe as áreas de conhecimento do edital",
+            "isVisibleDataTable": false,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": false,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/selectCollection.jsx",
+                "mask": "",
+                "pars": [ ],
+                "filters": [
+                    {
+                        "type": "attribute",
+                        "key": "active",
+                        "value": true
+                    }
+                ]
+            }
+        }
+    ],
+    "pars": [ ],
+    "filters": [
+        {
+            "type": "attribute",
+            "key": "active",
+            "value": true
+        }
+    ]
+}

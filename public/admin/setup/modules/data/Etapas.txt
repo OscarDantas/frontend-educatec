@@ -1,0 +1,20 @@
+[
+  {
+    "key": "1",
+    "ds_etapa": "Educação Infantil",
+    "created_at": "17/12/2017",
+    "st_registro_ativo": "Ativo"
+  },
+  {
+    "key": "2",
+    "ds_etapa": "Ensino Fundamental",
+    "created_at": "17/12/2017",
+    "st_registro_ativo": "Ativo"
+  },
+  {
+    "key": "3",
+    "ds_etapa": "Ensino Médio",
+    "created_at": "18/12/2017",
+    "st_registro_ativo": "Ativo"
+  }
+]

@@ -1,0 +1,118 @@
+{
+    "title": "Etapa",
+    "model": "Etapas",
+    "icon": "user",
+    "actions": [
+        {
+            "key": "add",
+            "description": "Adicionar",
+            "icon": "plus",
+            "tooltip": "Clique para adicionar um novo registro",
+            "path": "/actions/add.jsx",
+            "isMoreAction": false,
+            "isDisableWithoutSelection": false,
+            "formPars": [],
+            "filters": []
+        },
+        {
+            "key": "search",
+            "description": "Buscar",
+            "icon": "search",
+            "tooltip": "Clique para buscar",
+            "path": "/actions/search.jsx",
+            "isMoreAction": false,
+            "isDisableWithoutSelection": false,
+            "formPars": [],
+            "filters": []
+        },
+        {
+            "key": "edit",
+            "description": "Editar",
+            "icon": "edit",
+            "tooltip": "Clique para editar",
+            "path": "/actions/edit.jsx",
+            "isMoreAction": false,
+            "isDisableWithoutSelection": true,
+            "formPars": [],
+            "filters": []
+        },
+        {
+            "key": "remove",
+            "description": "Remover",
+            "icon": "delete",
+            "tooltip": "Clique para remover",
+            "path": "/actions/search.jsx",
+            "isMoreAction": true,
+            "isDisableWithoutSelection": true,
+            "formPars": [],
+            "filters": []
+        }
+    ],
+    "attributes": [
+        {
+            "model": "",
+            "key": "ds_etapa",
+            "description": "Descrição",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": true,
+            "isRequired": true,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [],
+                "filters": []
+            }
+        },
+        {
+            "model": "",
+            "key": "created_at",
+            "description": "Cadastrado em",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": true,
+            "isEditable": false,
+            "isRequired": false,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [],
+                "filters": []
+            }
+        },
+        {
+            "model": "",
+            "key": "st_registro_ativo",
+            "description": "Situação",
+            "tooltip": "",
+            "isVisibleDataTable": true,
+            "isVisibleInfo": true,
+            "isSearchable": false,
+            "isEditable": false,
+            "isRequired": false,
+            "order": 1,
+            "formItem": {
+                "key": "text",
+                "path": "/formItems/inputText.jsx",
+                "mask": "",
+                "pars": [],
+                "filters": []
+            }
+        }
+    ],
+    "pars": [],
+    "filters": [
+        {
+            "type": "attribute",
+            "key": "st_registro_ativo",
+            "value": true
+        }
+    ]
+}

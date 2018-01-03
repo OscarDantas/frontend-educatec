@@ -1,0 +1,115 @@
+.content-module{
+	position: relative;
+	background: rgb(241, 241, 241);
+	width: 100%;
+	height: 100%;
+
+	.header-module{
+		background: #fff;
+		padding: 10px 15px;
+
+		.titulo-module{
+			height: 40px;
+			line-height: 40px;
+			font-size: 22px;
+			font-weight: bold;
+			display: block;
+
+			span{
+				text-transform: uppercase;
+			}
+
+			i{
+				padding-right: 10px;
+				font-size: 25px;
+			}
+		}
+
+		.actions-module{
+			text-align: right;
+
+			.add{
+				border-color: #47B53D;
+    			color: #47B53D;
+			}
+
+			.actions-ext{
+				transform: rotate(90deg);
+			}
+		}
+	}
+	/* Button Icon */
+	.add, .search, .edit, .remove, .close, .actions-ext{
+		width: 40px;
+	    height: 40px;
+	    margin-left: 5px;
+	    border-width: 3px;
+	    border-color: #999;
+	    font-size: 20px;
+	    color: #999;
+	}
+	.data-table-module{
+		background: #fff;
+		//overflow: auto;
+		//display: block;
+		//height: 100%;
+	}
+
+	.fundo{
+		position: absolute;
+		background: rgba(0,0,0, 0.5);
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		display: none;
+	}
+
+	.sidebar{
+		position: absolute;
+		background: #fff;
+		width: 500px;
+		height: 100%;
+		right: -500px;
+		top: 0;
+		border: 1px solid #f2f2f2;
+    	transition: 0.5s;
+    	transition-timing-function: ease;
+    	overflow: hidden;
+    	z-index: 99999;
+
+    	.hearder-sidebar{
+    		width: 100%;
+    		padding: 10px 20px;
+			border-bottom: 1px solid #f2f2f2;
+    	}
+
+    	span{
+    		height: 40px;
+			line-height: 40px;
+			font-size: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+    	}
+
+    	.close{
+    		float: right;
+    	}
+
+    	/* Content Form */
+    	.content-form{
+    		padding: 20px;
+    	}
+	}
+
+	.fundo-expanded{
+		display: block;
+	}
+
+	.sidebar-expanded{
+		right: 0;
+		overflow: visible;
+		display: table;
+	}
+}

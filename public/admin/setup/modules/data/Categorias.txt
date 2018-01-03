@@ -1,0 +1,26 @@
+[
+  {
+    "key": "1",
+    "ds_categoria": "Biblioteca Escolar",
+    "created_at": "08/12/2017",
+    "st_registro_ativo": "Ativo"
+  },
+  {
+    "key": "2",
+    "ds_categoria": "Educação e Cultura Digital",
+    "created_at": "13/12/2017",
+    "st_registro_ativo": "Ativo"
+  },
+  {
+    "key": "3",
+    "ds_categoria": "Avaliação",
+    "created_at": "13/12/2017",
+    "st_registro_ativo": "Ativo"
+  },
+  {
+    "key": "4",
+    "ds_categoria": "Educação e Direitos Humanos",
+    "created_at": "16/12/2017",
+    "st_registro_ativo": "Ativo"
+  }
+]

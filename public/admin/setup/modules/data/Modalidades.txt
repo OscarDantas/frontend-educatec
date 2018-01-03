@@ -1,0 +1,14 @@
+[
+  {
+    "key": "1",
+    "ds_modalidade": "Ensino Regular",
+    "created_at": "17/12/2017",
+    "st_registro_ativo": "Ativo"
+  },
+  {
+    "key": "2",
+    "ds_modalidade": "Educação Especial",
+    "created_at": "17/12/2017",
+    "st_registro_ativo": "Ativo"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "key": "1",
+    "ds_grau_abrangencia": "Anos Finais",
+    "created_at": "19/12/2017",
+    "st_registro_ativo": "Ativo"
+  }
+]

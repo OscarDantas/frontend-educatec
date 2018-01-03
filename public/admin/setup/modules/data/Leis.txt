@@ -1,0 +1,16 @@
+[
+  {
+    "key": "1",
+    "ds_lei": "Lei nº 8.776, de 21 de julho de 2016",
+    "dt_lei": "21/07/2016",
+    "created_at": "17/12/2017",
+    "st_registro_ativo": "Ativo"
+  },
+  {
+    "key": "2",
+    "ds_lei": "Lei nº 6.555, de 12 de dezembro de 2014",
+    "dt_lei": "12/12/2014",
+    "created_at": "17/12/2017",
+    "st_registro_ativo": "Ativo"
+  }
+]
